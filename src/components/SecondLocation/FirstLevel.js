@@ -10,7 +10,7 @@ const FirstLevel = () => {
   const [qr4, setqr4] = useState(null);
   const [qr5, setqr5] = useState(null);
   const rightAnsw = ["1", "2", "3", "4", "5"];
-  const { setStep, setLevel, level } = useUser();
+  const { setStep, setLevel, level, setCurrentPage } = useUser();
   function check() {
     if (
       rightAnsw.indexOf(qr1) != -1 &&
@@ -20,6 +20,7 @@ const FirstLevel = () => {
       rightAnsw.indexOf(qr5) != -1
     ) {
       setLevel(7);
+      setCurrentPage(1);
       setStep(3);
     }
   }

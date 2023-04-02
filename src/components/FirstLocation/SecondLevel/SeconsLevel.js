@@ -83,6 +83,7 @@ const Second_Level = () => {
         onClick={() => {
           if (checkresult()) {
             setLevel(6);
+            setCurrentPage(1);
             setStep(3);
           }
         }}
@@ -91,31 +92,7 @@ const Second_Level = () => {
       </button>
       <div className="empty"></div>
       <Footer />
-      {/* <footer>
-              <div className="roadmap--navigation">
-                <button
-                  className="documents"
-                  id="documents"
-                  onClick={() => {setCurrentPage(0); setStep(3)}}
-                >
-                  Инвентарть
-                </button>
-                <button
-                  className="roadmap"
-                  id="roadmap"
-                  onClick={() => {setCurrentPage(1); setStep(3)}}
-                >
-                  Карта
-                </button>
-                <button
-                  className="case"
-                  id="case"
-                  onClick={() => {setCurrentPage(2); setStep(3)}}
-                >
-                  Задание
-                </button>
-              </div>
-            </footer> */}
+     
     </div>
   );
 };

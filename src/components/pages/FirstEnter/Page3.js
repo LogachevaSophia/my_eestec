@@ -16,7 +16,7 @@ const Page3 = () => {
           <button className="previous" id="previous" onClick={()=>{setCurrentPage(currentPage-1)}}>
             назад
           </button>
-          <button className="next" id="next" onClick={()=>{setStep(3); setLevel(4); setCurrentPage(0)}}>
+          <button className="next" id="next" onClick={()=>{setStep(3); setLevel(4); setCurrentPage(1)}}>
             Завершить
           </button>
         </div>

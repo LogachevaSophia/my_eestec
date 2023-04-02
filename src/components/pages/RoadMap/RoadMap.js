@@ -14,7 +14,6 @@ import SecondLevel from "../../FirstLocation/FirstLevel/FirstLevel";
 import Footer from "../../Footer/Footer";
 
 const RoadMap = () => {
-
   //карта
   const {
     setStep,
@@ -29,7 +28,6 @@ const RoadMap = () => {
 
   //локации
   const mas = [loc1, loc2, loc3, loc4, loc5, loc6, loc7, loc8, loc9];
-
 
   const handleTouchStart = (e) => {
     //обработка тача для смахивания влево и вправо (из карты можно выйти в инвентарь и в задание)
@@ -52,8 +50,10 @@ const RoadMap = () => {
       console.log("следующий");
       next();
     } else {
-      console.log("предыдущий");
-      prev();
+      if (diff < -5) {
+        console.log("предыдущий");
+        prev();
+      }
     }
 
     setTouchPosition(null);
@@ -125,31 +125,7 @@ const RoadMap = () => {
             })}
 
             <div className="end-empty"></div>
-            {/* <footer>
-              <div className="roadmap--navigation">
-                <button
-                  className="documents"
-                  id="documents"
-                  onClick={() => setCurrentPage(0)}
-                >
-                  Инвентарть
-                </button>
-                <button
-                  className="roadmap"
-                  id="roadmap"
-                  onClick={() => setCurrentPage(1)}
-                >
-                  Карта
-                </button>
-                <button
-                  className="case"
-                  id="case"
-                  onClick={() => setCurrentPage(2)}
-                >
-                  Задание
-                </button>
-              </div>
-            </footer> */}
+           
             <Footer />
           </div>
         </div>
@@ -202,54 +178,30 @@ const RoadMap = () => {
               </tr>
             </table>
             <Footer />
-            {/* <footer>
-              <div className="roadmap--navigation">
-                <button
-                  className="documents"
-                  id="documents"
-                  onClick={() => setCurrentPage(0)}
-                >
-                  Инвентарть
-                </button>
-                <button
-                  className="roadmap"
-                  id="roadmap"
-                  onClick={() => setCurrentPage(1)}
-                >
-                  Карта
-                </button>
-                <button
-                  className="case"
-                  id="case"
-                  onClick={() => setCurrentPage(2)}
-                >
-                  Задание
-                </button>
-              </div>
-            </footer> */}
           </div>
         );
       } else {
         return (
           <div onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
             <div className="upmenu clearfix">
-            Инвентарь
-            <button
-              className="case"
-              onClick={() => {
-                setcurrInventory(0);
-              }}
-            >
-              Контакты
-            </button>
-            <button
-              className="case"
-              onClick={() => {
-                setcurrInventory(1);
-              }}
-            >
-              Документы
-            </button></div>
+              Инвентарь
+              <button
+                className="case"
+                onClick={() => {
+                  setcurrInventory(0);
+                }}
+              >
+                Контакты
+              </button>
+              <button
+                className="case"
+                onClick={() => {
+                  setcurrInventory(1);
+                }}
+              >
+                Документы
+              </button>
+            </div>
             <table>
               <caption>Документация</caption>
               <tr>
@@ -273,31 +225,6 @@ const RoadMap = () => {
                 <td>Ссылка на моральную помощь</td>
               </tr>
             </table>
-            {/* <footer>
-              <div className="roadmap--navigation">
-                <button
-                  className="documents"
-                  id="documents"
-                  onClick={() => setCurrentPage(0)}
-                >
-                  Инвентарть
-                </button>
-                <button
-                  className="roadmap"
-                  id="roadmap"
-                  onClick={() => setCurrentPage(1)}
-                >
-                  Карта
-                </button>
-                <button
-                  className="case"
-                  id="case"
-                  onClick={() => setCurrentPage(2)}
-                >
-                  Задание
-                </button>
-              </div>
-            </footer> */}
             <Footer />
           </div>
         );
@@ -309,31 +236,6 @@ const RoadMap = () => {
       return (
         <div onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
           
-          {/* <footer>
-            <div className="roadmap--navigation">
-              <button
-                className="documents"
-                id="documents"
-                onClick={() => setCurrentPage(0)}
-              >
-                Инвентарть
-              </button>
-              <button
-                className="roadmap"
-                id="roadmap"
-                onClick={() => setCurrentPage(1)}
-              >
-                Карта
-              </button>
-              <button
-                className="case"
-                id="case"
-                onClick={() => setCurrentPage(2)}
-              >
-                Задание
-              </button>
-            </div>
-          </footer> */}
           <Footer />
         </div>
       );

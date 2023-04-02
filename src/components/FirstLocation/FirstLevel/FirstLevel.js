@@ -41,7 +41,8 @@ const SecondLevel = ({ data }) => {
     if (diff > 5) {
       next();
     } else {
-      prev();
+      if (diff<-5){
+      prev();}
     }
 
     setTouchPosition(null);
@@ -62,7 +63,7 @@ const SecondLevel = ({ data }) => {
 
       setCurrentPage(currentPage + 1);
     } else {
-      setCurrentPage(0);
+      setCurrentPage(1);
       setLevel(5);
       setStep(3);
     }
@@ -81,7 +82,7 @@ const SecondLevel = ({ data }) => {
       }
       setCurrentPage(currentPage + 1);
     } else {
-      setCurrentPage(0);
+      setCurrentPage(1);
       setLevel(5);
       setStep(3);
     }
@@ -107,7 +108,7 @@ const SecondLevel = ({ data }) => {
       </div>
     );
   } else {
-    setCurrentPage(0);
+    setCurrentPage(1);
     setLevel(5);
     setStep(3);
   }
