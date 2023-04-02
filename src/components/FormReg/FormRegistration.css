@@ -1,0 +1,83 @@
+:root {
+  box-sizing: border-box;
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+.registration--page {
+  width: 100vw;
+  height: 100vh;
+  color: #FFFFFF;
+  background: linear-gradient(45deg, #2a1873 0%, #ec4b7e 100%);
+  position: relative;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 10%;
+
+  border-radius: 2em;
+}
+
+.registration--input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.login {
+  height: 37px;
+  width: 232px;
+  border-radius: 0.5em;
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  text-align: center;
+}
+
+.pswd {
+  height: 37px;
+  width: 232px;
+  border-radius: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+}
+.pswd:focus, .login:focus{
+  border: 3px solid #ff385db5;
+  background-color: rgba(0, 42, 84, 0.3);
+}
+.registration--title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.enter-in {
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+  background-color: transparent;
+  border: 3px solid white;
+  color: white;
+  font-weight: 400;
+  border-radius: 1em;
+  padding: 0.7em 2em;
+}

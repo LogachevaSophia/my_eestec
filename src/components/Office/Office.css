@@ -1,0 +1,61 @@
+:root {
+    box-sizing: border-box;
+}
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.office-box{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+.office-box h1{
+    text-align: center;
+}
+.office-page {
+    width: 100vw;
+    /*height: 100vh;*/
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.office {
+    object-fit: contain;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.evacuation {
+    height: 37px;
+    width: 232px;
+    border-radius: 15px;
+    display: block;
+    background-color: rgba(93, 190, 255, 0.719);
+    border: none;
+    text-align: center;
+}
+
+.submit {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    border: 5px solid rgb(93, 190, 255);
+}
+
+.officeBut{
+    position: absolute;
+    z-index: 500;
+    background-color: rgba(93, 190, 255, 0.386);
+    border: 3px solid rgb(93, 190, 255);
+    /* top: 0;
+    left: 0; */
+}

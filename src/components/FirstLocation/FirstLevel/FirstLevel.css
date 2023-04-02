@@ -1,0 +1,48 @@
+.cards-field{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+.cards-field::before{
+    content: "";
+    height: 100%;
+    width: 1px;
+    right: 50%;
+    background-color: black;
+    position: absolute;
+}
+.wrong-text{
+    position: absolute;
+    color: red;
+    left: 0;
+    width: 30px;
+    font-size: 30px;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.right-text{
+    position: absolute;
+    color: green;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    font-size: 30px;
+    overflow: hidden;
+    text-align: center; 
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 10px;
+    background-color: white;
+    width: calc(100% - 100px);
+    box-sizing: border-box;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

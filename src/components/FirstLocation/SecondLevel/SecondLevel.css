@@ -1,0 +1,22 @@
+.cardd{
+    width:200px;
+    height: 300px;
+    border-radius: 12px;
+    border:5px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    cursor: grab;flex-direction: row;
+
+}
+.cardholder{
+    display: flex;
+    flex-direction: row;
+}
+.case:hover{
+    cursor:pointer;
+}
+.empty{
+    height: 150px;
+}

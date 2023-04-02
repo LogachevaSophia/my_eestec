@@ -1,0 +1,75 @@
+:root {
+    box-sizing: border-box;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+.first-enter {
+    width: 100vw;
+    min-height: 100vh;
+    background: #F5F5F5;
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px
+}
+.tittle-info{
+    width: 100%;
+    max-width: 900px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.first-enter--navigation {
+    width: 100%;
+    max-width: 500px;
+    height: 30vmin;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.previous {
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+
+    background-color: #4279f0;
+    color: white;
+    border-radius: 1em;
+    width: 120px;
+    height: 50px;
+    border: none;
+}
+
+.next {
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+
+
+    background-color: #f23e5f;
+    color: white;
+    border-radius: 1em;
+    width: 120px;
+    height: 50px;
+    border: none;
+}
+
+.Fintroduction {
+    text-align: center;
+}
+
+.Ftitle {
+    height: 110px;
+    color: #f23e5f;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
